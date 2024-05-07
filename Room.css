@@ -1,0 +1,269 @@
+* {
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background : #476A6F;
+    height : 80 px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top : 0;
+    z-index: 999;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width : 1800px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    background-color: aliceblue;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}   
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius : 4px;
+    background: #ECBEB4;
+    color: #fff;
+}
+
+.button:hover{
+    background: #DE8E7c;
+    transition: all 0.2 ease;
+}
+
+.navbar__links:hover{
+    color: #DE8E7c;
+    transition: all 0.2 ease;
+}
+
+/* Smart Home Section */
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #841C26;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.main__content h2{
+    font-size: 2rem;
+    background-color: black;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.main__content p{
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.main__btn{
+    background-color: #841C26;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    position: relative;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.main__btn a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+#main__img{
+    height: 80%;
+    width: 80%;
+}
+.main__content h2{
+    font-size: 2rem;
+    background-color: black;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+/* Living Room Section */
+.rooms{
+    background-color: #CEF3EC;
+    padding-top: 70px;
+    padding-right: 520px;
+}
+
+.rooms__container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: left;
+    justify-self: left;
+    margin: 0 auto;
+    height: 180vh;
+    background-color: #CEF3EC;
+    z-index: 1;
+    max-width: 1300px;
+    padding: 0px 40px;
+}
+
+.room__control{
+    padding-left: 50px;
+}
+
+.rooms__card h2{
+    font-size: 2.4rem;
+    background-color: #476A6F;
+    color: #fff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.rooms__card h3{
+    font-size: 2rem;
+    background-color: black;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.buttons_group{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width : 2000px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.control__btn:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0 , 0.2);
+}
+
+.lock_button{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 40%;
+    max-width : 2000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius : 10px;
+    background: #476A6F;
+    color: #fff;
+    padding-top: 12px;
+}
+
+.toggle-btn{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background: #A9FF85;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.toggle-btn.active{
+    background-color: #FC3936;
+}
+
+.toggle-btn .icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-55%);
+    height: 35px;
+    width: 35px;
+    font-size: 27px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn.active .icon{
+    left: calc(100% - 35px - 20px);
+    color: black;
+}
