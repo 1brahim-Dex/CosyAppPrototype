@@ -12,34 +12,40 @@
     <!-- Nav Bar Section-->
     <nav class="navbar">
         <div class="navbar__container">
-        <a href="/" id="navbar__logo">Cosy</a>  
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__links">
-                    Homepage
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="Room.html" class="navbar__links">
-                    Rooms 
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="" class="navbar__links">
-                    Energy Management 
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="" class="navbar__links">
-                    Settings
-                </a>
-            </li>
-            <li class="navbar__btn">
-                <a href="Account.html" class="button">
-                    View Account
-                </a>
-            </li>
-        </ul>
+            <a href="/" id="navbar__logo">Cosy</a>  
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                        Homepage
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Room.html" class="navbar__links">
+                        Rooms 
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="EnergyManagement.html" class="navbar__links">
+                        Energy Management 
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Settings.html" class="navbar__links">
+                        Settings
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="Account.html" class="button">
+                        View Account
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Rooms Section -->
@@ -320,5 +326,6 @@
             return lockIcon.classList.replace("bxs-lock-alt", "bx-lock-open-alt");
         })
     </script>
+    <script src="app.js"></script>
 </body>
 </html>
