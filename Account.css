@@ -224,6 +224,10 @@
     outline: none;
 }
 
+.account__btn.active{
+    background-color: green;
+}
+
 .account__btn a{
     position: relative;
     z-index: 2;

@@ -6,6 +6,11 @@ menu.addEventListener('click', function(){
     menuLinks.classList.toggle('active');
 })
 
+function clickBtn(){
+    const btn = document.querySelector(".account__btn");
+    btn.classList.toggle("active")
+}
+
 function toggleButton(){
     const toggleBtn = document.querySelector(".toggle-btn");
     lockIcon = document.querySelector(".icon i");
