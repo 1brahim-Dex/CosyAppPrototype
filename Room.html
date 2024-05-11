@@ -313,6 +313,18 @@
             </div>
         </div>
     </nav>
-    <script src="app.js"></script>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-btn");
+        lockIcon = document.querySelector(".icon i");
+        toggleBtn.addEventListener("click", () => {
+            toggleBtn.classList.toggle("active");
+
+            if(toggleBtn.classList.contains("active")){
+                return lockIcon.classList.replace("bx-lock-open-alt", "bxs-lock-alt");
+            }
+            return lockIcon.classList.replace("bxs-lock-alt", "bx-lock-open-alt");
+        })
+    </script>
 </body>
 </html>
