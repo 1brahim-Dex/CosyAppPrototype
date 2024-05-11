@@ -268,7 +268,7 @@
     color: black;
 }
 
-* Mobile Responsive NavBar*/
+/* Mobile Responsive NavBar*/
 @media (max-width: 960px){
     .navbar__container{
         display: flex;
