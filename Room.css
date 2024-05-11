@@ -182,7 +182,7 @@
 
 .rooms__card h2{
     font-size: 2.4rem;
-    background-color: #476A6F;
+    background-color: black;
     color: #fff;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -227,8 +227,14 @@
     padding: 0 20px;
     border-radius : 10px;
     background: #476A6F;
+    font-size: 1rem;
     color: #fff;
     padding-top: 12px;
+}
+
+.lock_button h2{
+    font-size: 1.5rem;
+    background-color: aliceblue;
 }
 
 .toggle-btn{
@@ -266,4 +272,216 @@
 .toggle-btn.active .icon{
     left: calc(100% - 35px - 20px);
     color: black;
+}
+
+
+.toggle-btnSwitch{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background: #A9FF85;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.toggle-btnSwitch.active{
+    background-color: #FC3936;
+}
+
+.toggle-btnSwitch .icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-55%);
+    height: 35px;
+    width: 35px;
+    font-size: 27px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btnSwitch.active .icon{
+    left: calc(100% - 35px - 20px);
+    color: black;
+}
+
+.toggle-switch{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background: #A9FF85;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.toggle-switch.active{
+    background-color: #FC3936;
+}
+
+.toggle-switch .icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-55%);
+    height: 35px;
+    width: 35px;
+    font-size: 27px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-switch.active .icon{
+    left: calc(100% - 35px - 20px);
+    color: black;
+}
+
+/* Mobile Responsive NavBar*/
+@media (max-width: 960px){
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        height : 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1330px;
+        padding: 0;
+
+    }
+
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5 ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+
+    .navbar__menu.active{
+        background: black;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5 ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo{
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar__item{
+        width: 100%;
+    }
+
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__btn{
+        padding-bottom: 2rem;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .navbar__toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Mobile Responsive Main Content*/
+@media (max-width: 960px){
+    .rooms{
+        height: 700vh
+    }   
+
+    .rooms__container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .rooms__card{
+        width: 90%;
+        height: 100%;
+    }
+    
+    .buttons_group{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 2.2rem;
+        align-items: center;
+        justify-self: center;
+        width: 120%;
+        margin: 0 auto;
+        height: 20vh;
+    }
+
+    .lock_button{
+        width: 120%;
+        height: 100%;
+    }
+
 }

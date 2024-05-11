@@ -96,7 +96,6 @@
     transition: all 0.2 ease;
 }
 
-/* Mobile Responsive*/
 @media (max-width: 960px){
     .navbar__container{
         display: flex;
@@ -194,7 +193,6 @@
     }
 }
 
-/* Smart Home Section */
 .main {
     background-color: #CEF3EC;
 }
@@ -212,16 +210,6 @@
     padding: 0 50 px;
 }
 
-.main__content h1 {
-    font-size: 4rem;
-    background-color: #841C26;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-}
-
 .main__content h2{
     font-size: 2rem;
     background-color: black;
@@ -237,31 +225,12 @@
     font-weight: 700;
 }
 
-.main__btn{
-    background-color: #841C26;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
-    position: relative;
-    transition: all 0.5s;
-    outline: none;
-}
-
-.main__btn a{
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-}
-
 #main__img{
     height: 80%;
     width: 80%;
 }
 
-/* Mobile Responsive Smart Home Section*/
+/* Mobile Responsive*/
 @media (max-width: 960px){
     .main__container{
         display: grid;
@@ -339,4 +308,3 @@
         margin: 2.5rem 0;
     }
 }
-

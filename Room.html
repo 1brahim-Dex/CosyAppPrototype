@@ -12,34 +12,40 @@
     <!-- Nav Bar Section-->
     <nav class="navbar">
         <div class="navbar__container">
-        <a href="/" id="navbar__logo">Cosy</a>  
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__links">
-                    Homepage
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="Room.html" class="navbar__links">
-                    Rooms 
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="" class="navbar__links">
-                    Energy Management 
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="" class="navbar__links">
-                    Settings
-                </a>
-            </li>
-            <li class="navbar__btn">
-                <a href="Account.html" class="button">
-                    View Account
-                </a>
-            </li>
-        </ul>
+            <a href="/" id="navbar__logo">Cosy</a>  
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                        Homepage
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Room.html" class="navbar__links">
+                        Rooms 
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="EnergyManagement.html" class="navbar__links">
+                        Energy Management 
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Settings.html" class="navbar__links">
+                        Settings
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="Account.html" class="button">
+                        View Account
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Rooms Section -->
@@ -52,8 +58,8 @@
                 <h3> Entry > </h3>
                 <div class="buttons_group"> 
                     <div class="lock_button">
-                        <h1> Front Door </h1>
-                        <div class="toggle-btn">
+                        <h2> Front Door </h2>
+                        <div class="toggle-btn" onclick="toggleButton()">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
                             </div>
@@ -61,8 +67,8 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> East Window </h1>
-                        <div class="toggle-btn">
+                        <h2> East Window </h2>
+                        <div class="toggle-btn" onclick="toggleButton()">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
                             </div>
@@ -74,16 +80,16 @@
                 <h3> Comfort > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Ceiling Fan </h1>
-                        <div class="toggle-btn">
+                        <h2> Ceiling Fan </h2>
+                        <div class="toggle-btnSwitch" onclick="toggleButtonSwitch()">
                             <div class="icon">
                             </div>
                         </div>
                     </div>
 
                     <div class="lock_button">
-                        <h1> Air Conditioning </h1>
-                        <div class="toggle-btn">
+                        <h2> Air Conditioning </h2>
+                        <div class="toggle-btnSwitch">
                             <div class="icon">
                             </div>
                         </div>
@@ -93,16 +99,16 @@
                 <h3> Lights > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Main Lights </h1>
-                        <div class="toggle-btn">
+                        <h2> Main Lights </h2>
+                        <div class="toggle-switch" onclick="toggleSwitch()">
                             <div class="icon">
                             </div>
                         </div>
                     </div>
 
                     <div class="lock_button">
-                        <h1> Side Lamps </h1>
-                        <div class="toggle-btn">
+                        <h2> Side Lamps </h2>
+                        <div class="toggle-switch">
                             <div class="icon">
                             </div>
                         </div>
@@ -118,7 +124,7 @@
                 <h3> Entry > </h3>
                 <div class="buttons_group"> 
                     <div class="lock_button">
-                        <h1> Dining Room Door </h1>
+                        <h2> Dining Room Door </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
@@ -127,7 +133,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Dining Room East Window </h1>
+                        <h2> Room East Window </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
@@ -140,7 +146,7 @@
                 <h3> Comfort > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Ceiling Fan </h1>
+                        <h2> Ceiling Fan </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -148,7 +154,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Air Conditioning </h1>
+                        <h2> Air Conditioning </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -159,7 +165,7 @@
                 <h3> Lights > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Main Lights </h1>
+                        <h2> Main Lights </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -167,7 +173,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Chandelier </h1>
+                        <h2> Chandelier </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -183,7 +189,7 @@
                 <h3> Entry > </h3>
                 <div class="buttons_group"> 
                     <div class="lock_button">
-                        <h1> Bedroom Door </h1>
+                        <h2> Bedroom Door </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
@@ -192,7 +198,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Bedroom Window </h1>
+                        <h2> Bedroom Window </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
@@ -205,7 +211,7 @@
                 <h3> Comfort > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Ceiling Fan </h1>
+                        <h2> Ceiling Fan </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -213,7 +219,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Air Conditioning </h1>
+                        <h2> Air Conditioning </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -224,7 +230,7 @@
                 <h3> Lights > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Main Lights </h1>
+                        <h2> Main Lights </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -232,7 +238,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Bedside Lamps </h1>
+                        <h2> Bedside Lamps </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -248,7 +254,7 @@
                 <h3> Entry > </h3>
                 <div class="buttons_group"> 
                     <div class="lock_button">
-                        <h1> Study Door </h1>
+                        <h2> Study Door </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
@@ -257,7 +263,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Study Window </h1>
+                        <h2> Study Window </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                                 <i class='bx bx-lock-open-alt'></i>
@@ -270,7 +276,7 @@
                 <h3> Comfort > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Ceiling Fan </h1>
+                        <h2> Ceiling Fan </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -278,7 +284,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Air Conditioning </h1>
+                        <h2> Air Conditioning </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -289,7 +295,7 @@
                 <h3> Lights > </h3>
                 <div class="buttons_group">
                     <div class="lock_button">
-                        <h1> Main Lights </h1>
+                        <h2> Main Lights </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -297,7 +303,7 @@
                     </div>
 
                     <div class="lock_button">
-                        <h1> Table Lamps </h1>
+                        <h2> Table Lamps </h2>
                         <div class="toggle-btn">
                             <div class="icon">
                             </div>
@@ -307,18 +313,6 @@
             </div>
         </div>
     </nav>
-
-    <script>
-        const toggleBtn = document.querySelector(".toggle-btn");
-        lockIcon = document.querySelector(".icon i");
-        toggleBtn.addEventListener("click", () => {
-            toggleBtn.classList.toggle("active");
-
-            if(toggleBtn.classList.contains("active")){
-                return lockIcon.classList.replace("bx-lock-open-alt", "bxs-lock-alt");
-            }
-            return lockIcon.classList.replace("bxs-lock-alt", "bx-lock-open-alt");
-        })
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

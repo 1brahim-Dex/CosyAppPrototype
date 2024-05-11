@@ -10,29 +10,35 @@
     <!-- Nav Bar Section-->
     <nav class="navbar">
         <div class="navbar__container">
-        <a href="/" id="navbar__logo">Cosy</a>  
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="" class="navbar__links">
-                    Homepage
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="Room.html" class="navbar__links">
-                    Rooms 
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="" class="navbar__links">
-                    Energy Management 
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="" class="navbar__links">
-                    Settings
-                </a>
-            </li>
-        </ul>
+            <a href="/" id="navbar__logo">Cosy</a>  
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                        Homepage
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Room.html" class="navbar__links">
+                        Rooms 
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="EnergyManagement.html" class="navbar__links">
+                        Energy Management 
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="Settings.html" class="navbar__links">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Account Management Section-->
@@ -40,47 +46,47 @@
         <div class="account__container">
             <div class="account__content">
                 <h1> WELCOME HOME </h1>
-                <label for="textbox"> First Name: </label>
+                <label for="textbox"> <h4>First Name:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="2" cols="50"> Enter your first name here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = " Enter your first name here ..." rows ="2" cols="50"></textarea>
                 <br> <br>
 
-                <label for="textbox"> Last Name: </label>
+                <label for="textbox"> <h4>Last Name:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="2" cols="50"> Enter your last name here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = " Enter your last name here ..." rows="2" cols="50"></textarea>
                 <br> <br>
 
-                <label for="textbox"> Email Address: </label>
+                <label for="textbox"> <h4>Email Address:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="2" cols="50"> Enter your email address here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = " Enter your email address here ..." rows="2" cols="50"></textarea>
                 <br> <br>
 
-                <label for="textbox"> Phone Number: </label>
+                <label for="textbox"> <h4>Phone Number:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="2" cols="50"> Enter your phone number here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = " Enter your phone number here ..." rows="2" cols="50"></textarea>
                 <br> <br>
 
-                <label for="textbox"> Gender: </label>
+                <label for="textbox"> <h4>Gender:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="2" cols="50"> Enter your gender here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = " Enter your gender here ..." rows="2" cols="50"></textarea>
                 <br> <br>
 
-                <label for="textbox"> Building Name: </label>
+                <label for="textbox"> <h4>Building Name:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="2" cols="50"> Enter your building's name here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = " Enter your building's name here ..." rows="2" cols="50"></textarea>
                 <br> <br>
 
-                <label for="textbox"> Members: </label>
+                <label for="textbox"> <h4><Occupants:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="4" cols="50"> Enter your building's member name(s) here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = " Enter your building's occupant(s) here ..." rows="4" cols="50"></textarea>
                 <br> <br>
 
-                <label for="textbox"> Home Notes: </label>
+                <label for="textbox"> <h4>Home Notes:</h4> </label>
                 <br>
-                <textarea id="textbox" name="textbox" rows="4" cols="50"> Enter your home notes here ...</textarea>
+                <textarea id="textbox" name="textbox" placeholder = "'Sink in Bathroom clogged, report to building management'" rows="4" cols="50"></textarea>
                 <br> <br>
 
-                <button class="account__btn"> Save Changes </button>
+                <button class="account__btn" onclick="clickBtn()"> <span> Save </span>  </button>
             </div>
 
             <div class = "account__img--container">
@@ -90,5 +96,7 @@
 
         </div>
     </nav>
+
+    <script src="app.js"></script>
 </body>
 </html>
